@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Testes"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xstring": "cpp"
+		}
+	}
+}

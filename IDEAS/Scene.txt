@@ -1,0 +1,9 @@
+Window: <- Renderiza a nossa cena
+    Scene: <- Contém os objetos e os renderiza
+        GameObject1: <- Objeto da cena
+            Physics
+            Rect
+        GameObject2: <- Objeto da cena
+            Physics
+            Texture
+
