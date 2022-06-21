@@ -4,11 +4,13 @@
 </h1>
 <p>
   <img src="https://img.shields.io/static/v1?label=SDL2-Library&message=LICENSE&color=7159c1&style=plastic&logo=jiraSoftware"/>
-  <img src="https://img.shields.io/static/v1?label=Mozilla&message=LICENSE&color=7159c1&style=plastic&logo=git"/>
-  <a>A 2D rendering game engine using SDL2 by the name of DKZ.</a>
+  <img src="https://img.shields.io/static/v1?label=Mozilla&message=LICENSE&color=brightgreenc1&style=plastic&logo=git"/>
 </p>
 
+<h4>A 2D rendering game engine using SDL2 by the name of Dokarg.</h4>
+
 ## Features
+
 - [x] Scene management
 - [x] GameObject management
 - [x] Render forms
