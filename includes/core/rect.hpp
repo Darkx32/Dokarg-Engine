@@ -4,6 +4,9 @@
 #include "core/components.hpp"
 #include <iostream>
 
+/*
+* Class for create component rect into GameObject
+*/
 class Rect : public Component{
 private:
     Vector2 position;

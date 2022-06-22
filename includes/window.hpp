@@ -9,6 +9,9 @@
 
 #define WINDOW_CENTERED SDL_WINDOWPOS_CENTERED
 
+/*
+* Class for create window into game
+*/
 class Window
 {
 private:

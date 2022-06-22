@@ -6,6 +6,9 @@
 #include <iostream>
 #include <string>
 
+/*
+* Class for create Scene
+*/
 class Scene{
 private:
     SDL_Renderer *renderer;
@@ -17,6 +20,7 @@ private:
 
 public:
     Scene(std::string name, Color background);
+    Scene() = default;
 
     void createRenderer(SDL_Window *window);
     void render();
