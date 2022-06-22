@@ -13,14 +13,14 @@ private:
     Color background;
 
     std::string name;
-    std::vector<GameObject> gameObjects;
+    std::vector<GameObject*> gameObjects;
 
 public:
     Scene(std::string name, Color background);
 
     void createRenderer(SDL_Window *window);
     void render();
-    void addGameObject(GameObject gameObject);
+    void addGameObject(GameObject *gameObject);
     SDL_Event *getEvent() {return &event;}
     void destroy();
 };
@@ -38,7 +38,7 @@ void Scene::createRenderer(SDL_Window *window){
     }
 }
 
-void Scene::addGameObject(GameObject gameObject){
+void Scene::addGameObject(GameObject *gameObject){
     gameObjects.push_back(gameObject);
 }
 
@@ -47,7 +47,7 @@ void Scene::render(){
     SDL_RenderClear(renderer);
     if(!gameObjects.empty())
         for(auto& gj : gameObjects){
-            gj.render(renderer);
+            gj->render(renderer);
         }
     SDL_RenderPresent(renderer);
 }

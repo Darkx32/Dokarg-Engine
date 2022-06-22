@@ -6,4 +6,9 @@ Window: <- Renderiza a nossa cena
         GameObject2: <- Objeto da cena
             Physics
             Texture
+        UI: <- Objeto para renderizar UI
+            Text:
+                position
+            button:
+                position
 
