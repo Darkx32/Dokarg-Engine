@@ -7,6 +7,8 @@
 */
 class Component{
 public:
+    Vector2 position;
+    Vector2 size;
+
     virtual void render(SDL_Renderer *renderer) {}
-    virtual void setPosition(Vector2 position) {}
 };

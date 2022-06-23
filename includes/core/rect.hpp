@@ -9,15 +9,12 @@
 */
 class Rect : public Component{
 private:
-    Vector2 position;
-    Vector2 size;
     Color background;
 
 public:
     Rect(Vector2 size, Color background);
 
     void render(SDL_Renderer *renderer);
-    void setPosition(Vector2 position);
 };
 
 void Rect::render(SDL_Renderer *renderer){
@@ -30,10 +27,6 @@ void Rect::render(SDL_Renderer *renderer){
 Rect::Rect(Vector2 size, Color background){
     this->size = size;
     this->background = background;
-}
-
-void Rect::setPosition(Vector2 position){
-    this->position = position;
 }
 
 #endif

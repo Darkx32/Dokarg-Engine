@@ -1,6 +1,9 @@
 #pragma once
 
-enum Keycode{
+/*
+* Codes for keys of the keyboard
+*/
+enum KeyCode{
     KEY_UNKNOWN,
 
     // Letters
@@ -22,7 +25,7 @@ enum Keycode{
     KEY_P,
     KEY_Q,
     KEY_R,
-    KEY_R,
+    KEY_S,
     KEY_T,
     KEY_U,
     KEY_V,
@@ -264,4 +267,15 @@ enum Keycode{
 
     KEY_AUDIOREWIND = 285,
     KEY_AUDIOFASTFORWARD = 286,
+};
+
+/*
+* Mouse keycodes
+*/
+enum MouseCode{
+    MOUSE_BUTTON_LEFT = 1,
+    MOUSE_BUTTON_MIDDLE,
+    MOUSE_BUTTON_RIGHT,
+    MOUSE_BUTTON_X1,
+    MOUSE_BUTTON_X2,
 };

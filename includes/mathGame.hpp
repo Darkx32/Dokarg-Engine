@@ -7,6 +7,14 @@
 struct Vector2{
     int x;
     int y;
+    Vector2 operator+(Vector2 vector){
+        x += vector.x;
+        y += vector.y;
+    }
+    Vector2 operator+=(Vector2 vector){
+        x += vector.x;
+        y += vector.y;
+    }
 };
 
 /*

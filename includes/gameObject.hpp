@@ -22,7 +22,7 @@ GameObject::GameObject(Vector2 position){
 }
 
 void GameObject::addComponent(Component *component){
-    component->setPosition(position);
+    component->position = position;
     components.push_back(component);
 }
 

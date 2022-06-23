@@ -5,7 +5,8 @@
 #include <string>
 #include <iostream>
 
-
+#include "input/input.hpp"
+#include "input/keycodes.hpp"
 #include "window.hpp"
 #include "colors.hpp"
 #include "mathGame.hpp"
