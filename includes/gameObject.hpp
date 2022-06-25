@@ -7,22 +7,25 @@
 class GameObject{
 private:
     Vector2 position;
+    Vector2 size;
 
     std::vector<Component*> components;
 
 public:
-    GameObject(Vector2 position);
+    GameObject(Vector2 position, Vector2 size);
 
     void render(SDL_Renderer *renderer);
     void addComponent(Component *component);
 };
 
-GameObject::GameObject(Vector2 position){
+GameObject::GameObject(Vector2 position, Vector2 size){
     this->position = position;
+    this->size = size;
 }
 
 void GameObject::addComponent(Component *component){
     component->position = position;
+    component->size = size;
     components.push_back(component);
 }
 

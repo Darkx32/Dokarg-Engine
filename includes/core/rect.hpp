@@ -12,7 +12,7 @@ private:
     Color background;
 
 public:
-    Rect(Vector2 size, Color background);
+    Rect(Color background);
 
     void render(SDL_Renderer *renderer);
 };
@@ -24,8 +24,7 @@ void Rect::render(SDL_Renderer *renderer){
     delete rect;
 }
 
-Rect::Rect(Vector2 size, Color background){
-    this->size = size;
+Rect::Rect(Color background){
     this->background = background;
 }
 

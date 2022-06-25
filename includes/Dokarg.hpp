@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 
+#include "textures/sprite.hpp"
 #include "input/input.hpp"
 #include "input/keycodes.hpp"
 #include "window.hpp"
